@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McLean Maintenance Solutions | Critical Assets</title>
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #1a202c; /* Dark slate background */
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        /* Header & Logo */
+        header {
+            background-color: #1a202c;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #2d3748;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            fill: #cbd5e0;
+        }
+
+        .logo-text-main {
+            color: #e2e8f0;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .logo-text-sub {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(26, 32, 44, 0.7), rgba(26, 32, 44, 0.9)), 
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+            padding: 100px 20px;
+            text-align: center;
+            color: #f7fafc;
+            border-bottom: 4px solid #4a5568;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            color: #e2e8f0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #1a202c;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background-color: #cbd5e0;
+        }
+
+        /* Services Section (The "Cover" Operations) */
+        .services {
+            background: linear-gradient(180deg, #e2e8f0 0%, #cbd5e0 100%);
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 40px 30px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-bottom: 4px solid #4a5568;
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            fill: #2d3748;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #1a202c;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: #a0aec0;
+            padding: 60px 20px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-col h4 {
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .secure-login {
+            display: inline-block;
+            margin-top: 15px;
+            color: #718096;
+            text-decoration: none;
+            font-family: monospace;
+            background: #2d3748;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .secure-login:hover {
+            color: #e2e8f0;
+        }
+
+        .footer-bottom {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-top: 1px solid #2d3748;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom a {
+            color: #a0aec0;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        .footer-bottom a:hover {
+            color: #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .footer-content { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 5 L10 25 L10 60 C10 80 50 95 50 95 C50 95 90 80 90 60 L90 25 Z" fill="none" stroke="#cbd5e0" stroke-width="6" stroke-linejoin="round"/>
+                <path d="M25 40 L50 65 L75 35" fill="none" stroke="#cbd5e0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="logo-text-main">MCLEAN</div>
+            <div class="logo-text-sub">Maintenance Solutions</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>PRECISION MAINTENANCE<br>FOR CRITICAL ASSETS.</h1>
+        <p>McLean is the premier choice for specialized system operations and advanced facility support, ensuring uptime when failure is not an option.</p>
+        <a href="#" class="cta-button">Optimize Operational Continuity</a>
+    </section>
+
+    <section class="services">
+        
+        <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#2d3748" stroke-width="2" fill="none" stroke-linejoin="round"/>
+            </svg>
+            <h3>Secure Power Systems</h3>
+            <p>Redundant power design, distribution, and uninterrupted service architectures for high-availability nodes.</p>
+        </div>
+
+        <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#2d3748" stroke-width="2" fill="none" stroke-linejoin="round"/>
+                <path d="M8 11l3 3 5-5" stroke="#2d3748" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Facility Networks</h3>
+            <p>Secure installation, integration, and maintenance of sensitive, air-gapped communication infrastructure.</p>
+        </div>
+
+        <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2v20M17 5l-5-3-5 3M19 12H5M16 16l-4 4-4-4" stroke="#2d3748" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Critical Environments</h3>
+            <p>Specialized climate control, thermal
